@@ -4,7 +4,8 @@ main {
 
 .main-container{
   width: 100%;
-  border-radius: 15px 0px 0px 15px;
+  border-radius: 5px 0px 0px 5px;
+  padding-left: 1rem;
  /*  border: 1px solid; */
 
   background-color: rgb(228, 229, 233);
