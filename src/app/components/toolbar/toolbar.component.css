@@ -1,0 +1,56 @@
+
+header{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(234, 237, 255);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.logo,
+.user-img{
+  width: 50px;
+  height: 50px;
+}
+
+.logo{
+  background-image: url(https://th.bing.com/th/id/R.9f714d55ea3f808e027b418e95ebd666?rik=1DmfYEYTReOSgQ&pid=ImgRaw&r=0);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.header-items{
+  padding: 1rem;
+}
+
+.user-img{
+  border-radius: 50%;
+  background-image: url(https://randomuser.me/api/portraits/women/48.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 10px;
+}
+
+li{
+  list-style: none;
+
+}
+
+li:nth-last-child(-n + 3){
+  margin-left: 10px;
+}
+
+.header-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

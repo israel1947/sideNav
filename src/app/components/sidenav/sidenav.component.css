@@ -1,0 +1,84 @@
+.container {
+  position: relative;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  padding: 1rem;
+  background-color: rgb(234, 237, 255);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+
+}
+
+
+li {
+  list-style: none;
+  text-align: center;
+  color: rgb(46, 53, 70);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: rgb(195, 205, 222);
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(46, 53, 70);
+}
+
+.icono {
+  height: 15px;
+  width: 15px;
+  padding: 5px;
+  box-shadow: 5;
+
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -8px;
+  top: 5px;
+  bottom: 0;
+
+  /* border: 1px solid; */
+
+}
+
+.icon-btn {
+  border-style: none;
+  background-color: rgb(212, 214, 228);
+  border-radius: 80px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /*  border: 1px solid blue; */
+  margin-top: 20px;
+}
+
+.showSideNavClass {
+  position: relative;
+  width: 50px;
+  height: 100%;
+  padding: 1rem;
+  background-color: rgb(234, 237, 255);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  transition: width 1s, height 2s;
+
+}
+
+.showSideNavClass a {
+  display: none;
+}
+
+.showSideNavClass .menu {
+  gap: 4rem;
+}

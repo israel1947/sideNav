@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+   // SidenavComponent,
+    //ToolbarComponent
   ],
   imports: [
     BrowserModule,
