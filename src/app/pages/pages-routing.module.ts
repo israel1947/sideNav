@@ -14,7 +14,7 @@ const routes: Routes = [
     children: [
       {
         path: 'opcion1',
-        component: Opction1Component
+        component: Opction1Component,
       },
       {
         path: 'opcion2',
@@ -33,11 +33,13 @@ const routes: Routes = [
         component: Opction5Component
       },
       {
-        path: '**',
-        redirectTo: ''
+        path: '',
+        redirectTo: 'opcion1',
+        pathMatch: 'full'
       }
     ]
   },
+
 ];
 
 @NgModule({

@@ -22,7 +22,7 @@ import { ToolbarComponent } from '../components/toolbar/toolbar.component';
     Opction5Component,
 
     SidenavComponent,
-    ToolbarComponent
+    ToolbarComponent,
   ],
   imports: [
     CommonModule,

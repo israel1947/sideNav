@@ -3,8 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: 'dashboard',
     loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
+  },
+  {
+    path:'**',
+    redirectTo:'dashboard/opcion1',
+    pathMatch:'full'
   }
 ];
 

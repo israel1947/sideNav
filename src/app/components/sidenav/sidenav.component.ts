@@ -15,27 +15,27 @@ export class SidenavComponent {
 
   menuItems: MenuItems[] = [
     {
-      ruta: "/home/opcion1",
+      ruta: "/dashboard/opcion1",
       nombre: "dashboard",
-      icon: "../../../assets/dashboard-icon.svg"
+      icon: "../../../assets/dashboard-icon.svg",
     },
     {
-      ruta: "/home/opcion2",
+      ruta: "/dashboard/opcion2",
       nombre: "card-wallet",
       icon: "../../../assets/card-wallet.svg"
     },
     {
-      ruta: "/home/opcion3",
+      ruta: "/dashboard/opcion3",
       nombre: "folder",
       icon: "../../../assets/folder.svg"
     },
     {
-      ruta: "/home/opcion4",
+      ruta: "/dashboard/opcion4",
       nombre: "gitlab",
       icon: "../../../assets/gitlab-full.svg"
     },
     {
-      ruta: "/home/opcion5",
+      ruta: "/dashboard/opcion5",
       nombre: "apps",
       icon: "../../../assets/app-window.svg"
     }
