@@ -9,7 +9,10 @@ import { MenuItems } from 'src/app/interfaces/interface';
 export class SidenavComponent {
 
   @ViewChild("contenedorSideNav") contenedorSideNav!: ElementRef;
-  show: Boolean = false
+  @ViewChild("subMenu2") subMenu!: ElementRef;
+  @ViewChild("disableBtn") disableBtn!: ElementRef;
+  @ViewChild("disableBtnDown") disableBtnDown!: ElementRef;
+  show: Boolean = false;
 
   constructor(private render: Renderer2) { }
 
@@ -22,7 +25,21 @@ export class SidenavComponent {
     {
       ruta: "/dashboard/opcion2",
       nombre: "card-wallet",
-      icon: "../../../assets/card-wallet.svg"
+      icon: "../../../assets/card-wallet.svg",
+      subMenu: [
+        {
+          ruta: "#",
+          nombre: "item1",
+        },
+        {
+          ruta: "#",
+          nombre: "item2",
+        },
+        {
+          ruta: "#",
+          nombre: "item3",
+        },
+      ]
     },
     {
       ruta: "/dashboard/opcion3",
@@ -45,15 +62,31 @@ export class SidenavComponent {
 
   showSidenav() {
     let contenedorNav = this.contenedorSideNav.nativeElement;
+    let disableBtnSubMenu = this.disableBtn.nativeElement;
     this.render.addClass(contenedorNav, "showSideNavClass");
+    this.render.addClass(disableBtnSubMenu, "disableBtnSubMenu");
     this.show = true
     console.log(this.show);
   }
 
   disableSideNav() {
     let jj = this.contenedorSideNav.nativeElement;
-    this.render.removeClass(jj, "showSideNavClass")
+    let disableBtnSubMenu = this.disableBtn.nativeElement;
+    this.render.removeClass(jj, "showSideNavClass");
+    this.render.removeClass(disableBtnSubMenu, "disableBtnSubMenu")
     this.show = false
+  }
+
+  subMenuShow() {
+    let secondMenu = this.subMenu.nativeElement;
+    this.render.removeClass(secondMenu, "subMenuHidden");
+    this.render.addClass(secondMenu, "subMenuShow");
+  }
+
+  disableSubMenu() {
+    let secondMenu = this.subMenu.nativeElement;
+    this.render.addClass(secondMenu, "subMenuHidden");
+    this.render.removeClass(secondMenu, "subMenuShow");
   }
 
 

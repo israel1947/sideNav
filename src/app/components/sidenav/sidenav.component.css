@@ -1,7 +1,7 @@
 .container {
   position: relative;
   top: 0;
-  width: 100px;
+  width: 200px;
   height: 100vh;
   padding: 1rem;
   background-color: rgb(234, 237, 255);
@@ -19,10 +19,10 @@ li {
   cursor: pointer;
 }
 
-li:hover {
+/* li:hover {
   background-color: rgb(195, 205, 222);
   border-radius: 5px;
-}
+} */
 
 a {
   text-decoration: none;
@@ -61,6 +61,52 @@ a {
   gap: 2rem;
   /*  border: 1px solid blue; */
   margin-top: 20px;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 1rem 0;
+  /*   flex-direction: column;
+  align-items: center;
+  align-content: center; */
+}
+
+.menu-items img {
+  width: 38px;
+  height: 38px;
+}
+
+.menu-items button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.subMenuHidden {
+  display: none;
+}
+
+.subMenuShow a {
+  display: block;
+  height: 100%;
+
+  text-align: left;
+
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+}
+
+.subMenuShow a:hover {
+  background-color: rgb(195, 205, 222);
+  border-radius: 5px;
+}
+
+.btnIcon {
+  display: flex;
+  flex-direction: column;
 }
 
 .showSideNavClass {

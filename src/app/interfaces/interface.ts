@@ -1,5 +1,9 @@
 export interface MenuItems{
-  ruta:string;
+  ruta:string
   nombre:string
   icon:string
+  subMenu?:Array<{
+    ruta:string
+    nombre:string
+  }>
 }
