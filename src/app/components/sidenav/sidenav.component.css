@@ -129,6 +129,10 @@ a {
   gap: 4rem;
 }
 
+.disableBtnSubMenu{
+  display: none;
+}
+
 .activate {
   background-color: rgb(195, 205, 222);
   border-radius: 5px;

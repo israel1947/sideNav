@@ -63,8 +63,10 @@ export class SidenavComponent {
   showSidenav() {
     let contenedorNav = this.contenedorSideNav.nativeElement;
     let disableBtnSubMenu = this.disableBtn.nativeElement;
+    let disableBtnSubMenu2 = this.disableBtnDown.nativeElement;
     this.render.addClass(contenedorNav, "showSideNavClass");
     this.render.addClass(disableBtnSubMenu, "disableBtnSubMenu");
+    this.render.addClass(disableBtnSubMenu2, "disableBtnSubMenu");
     this.show = true
     console.log(this.show);
   }
@@ -72,8 +74,10 @@ export class SidenavComponent {
   disableSideNav() {
     let jj = this.contenedorSideNav.nativeElement;
     let disableBtnSubMenu = this.disableBtn.nativeElement;
+    let disableBtnSubMenu2 = this.disableBtnDown.nativeElement;
     this.render.removeClass(jj, "showSideNavClass");
-    this.render.removeClass(disableBtnSubMenu, "disableBtnSubMenu")
+    this.render.removeClass(disableBtnSubMenu, "disableBtnSubMenu");
+    this.render.removeClass(disableBtnSubMenu2, "disableBtnSubMenu");
     this.show = false
   }
 
